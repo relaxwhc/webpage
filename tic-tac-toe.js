@@ -7,7 +7,7 @@ Announce the winner winningMessage()
 Reset the game gameReset()
 */
 
-// Onclick activate symbol change:
+// Onclick to activate symbol change:
 let gameStatus = "running";
 let counter = 1;
 function playClick(self) {
