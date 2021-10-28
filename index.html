@@ -9,6 +9,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tic-tac-toe-game.css">
     <title>Wong's Webpage</title>
     <style>
       body {
@@ -17,9 +18,9 @@
         padding: 0 100px;
         margin: 0;
       }
-      @media screen and (max-width: 576px) {
+      @media screen and (max-width: 992px) {
         body {
-          padding: 0 30px;
+          padding: 0 0;
         }
       }
     </style>
@@ -28,10 +29,10 @@
     <div class="container">
       <nav>
         <ul>
-          <li><img src="logo.png" alt="logo Wong's Webpage"></li>
+          <li><a href="index.html" id="logoLink"><img src="logo.png" alt="logo Wong's Webpage"></a></li>
           <li><a href="#about">About Me</a></li>
-          <li><a href="#">Game</a></li>
-          <li><a href="#">Form</a></li>
+          <li><a href="#gameTicTacToeArea">Game</a></li>
+          <li><a href="#userFormArea">Form</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -54,20 +55,52 @@ Aliquyam labore in sanctus dolor amet dolore diam sea. Ut minim voluptua commodo
         </section>
 
         <!-- Game and Form -->
-        <section id="about">
-          <div class="aboutBox">
-            <article id="gameTicTacToeArea">
-              photo
-            </article>
-            <article id="userFormArea">
-              form
-            </article>
+        <section id="gameAndForm">
+          <div class="gameAndFormBox">
+            <div class="row">
+
+              <!-- Tic Tac Toe Game -->
+              <article id="gameTicTacToeArea" class="col-lg">
+
+                <h2>Tic-Tac-Toe</h2>
+                <div class="game">
+                  <table class="gameTable" unselectable="on">
+                    <tr>
+                      <td id="r1c1"></td>
+                      <td id="r1c2"></td>
+                      <td id="r1c3"></td>
+                    </tr>
+                    <tr>
+                      <td id="r2c1"></td>
+                      <td id="r2c2"></td>
+                      <td id="r2c3"></td>
+                    </tr>
+                    <tr>
+                      <td id="r3c1"></td>
+                      <td id="r3c2"></td>
+                      <td id="r3c3"></td>
+                    </tr>
+                  </table>
+                  <div id="gameStatus">Status</div>
+
+                  <div onclick="gameReset()" id="resetButton">Reset Game</div>
+                </div>
+
+              </article>
+
+              <!-- User Form Demo -->
+              <article id="userFormArea" class="col-lg">
+
+                <h2>User Form</h2>
+
+              </article>
+            </div>
           </div>
         </section>
 
         <!-- Contact me area -->
         <section id="contact">
-          <div class="address">
+          <div class="addressBox">
             <address>
               <h2><span>Contact Me:</span></h2>
               <strong><span>Name:</span></strong><br>
@@ -95,6 +128,6 @@ Aliquyam labore in sanctus dolor amet dolore diam sea. Ut minim voluptua commodo
 
     </div>
     <!-- main JS Script -->
-    <script src="index.js"></script>
+    <script src="tic-tac-toe.js"></script>
   </body>
 </html>

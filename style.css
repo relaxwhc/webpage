@@ -40,6 +40,9 @@ nav ul {
 nav li img {
   height: 100px;
 }
+nav li a#logoLink {
+  margin-right: 70px;
+}
 nav li {
   float: left;
 }
@@ -60,7 +63,7 @@ nav li a:hover {
   font-size: 1.5em;
 }
 /* Navigation bar for small screen */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   nav ul {
     width: 200px;
     margin-left: auto;
@@ -122,10 +125,24 @@ section#about article#personalDescription {
   max-width: 300px;
 }
 
-/* Address */
-div.address {
+/* Game and Form */
+div.gameAndFormBox {
   width: 60%;
   min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: antiquewhite;
+  padding: 20px 30px;
+  border: 1px solid firebrick;
+  border-radius: 20px;
+  transition: background-color 0.5s;
+}
+
+/* Address */
+div.addressBox {
+  width: 60%;
+  min-width: 300px;
+  clear: both;
   margin-left: auto;
   margin-right: auto;
   background-color: powderblue;
@@ -134,7 +151,7 @@ div.address {
   border-radius: 20px;
   transition: background-color 0.5s;
 }
-div.address:hover {
+div.addressBox:hover {
   background-color: palegreen;
 }
 address {

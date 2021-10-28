@@ -1,37 +1,29 @@
 // Tic Tac Toe CSS
 
-body {
-  background-color: antiquewhite;
-  padding: 0;
-  margin: 0;
-}
-
 div.game {
-  border: 5px solid #aaa;
-  border-radius: 20px;
-  width: 500px;
-  height: 550px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 50px;
 }
 table.gameTable, table.gameTable td {
-  border: 1px solid gray;
+  border: 1px solid lightgray;
   border-collapse: collapse;
 }
 table.gameTable {
   position: relative;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  min-height: 300px;
   margin-left: auto;
   margin-right: auto;
 }
 table.gameTable td {
   width: 33.33%;
+  min-width: 1em;
   height: 33.33%;
+  min-height: 1em;
   vertical-align: middle;
   text-align: center;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: bold;
   font-family: "century gothic", Verdana, sans-serif;
   color: purple;
@@ -61,7 +53,8 @@ div#resetButton {
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;;
+  margin-bottom: 20px;
+  text-align: center;
 }
 div#resetButton:hover {
   background-color: dodgerblue;
