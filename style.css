@@ -1,31 +1,11 @@
-// User-form CSS
-body {
-  background-color: antiquewhite;
-  padding: 0;
-  margin: 0;
-}
-header {
-  background-color: sienna;
-  width: 100%;
-  height: 100px;
-}
+/* Wong's Webpage CSS */
+
+/* NAVIGATION BAR (Responsiveness via media query)*/
 nav {
   width: 100%;
   height: 40px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-footer {
-
-  bottom 0;
-  background-color: burlywood;
-  width: 100%;
-  height: 40px;
-}
-div.space{
-  min-height: 600px;
-}
-
-/* NAVIGATION BAR */
 nav ul {
   list-style-type: none;
   padding-left: 0;
@@ -37,7 +17,7 @@ nav ul {
   margin-right: auto;
   margin-bottom: 200px;
 }
-nav li img {
+nav li a img {
   height: 100px;
 }
 nav li a#logoLink {
@@ -62,6 +42,7 @@ nav li a:hover {
   color: royalblue;
   font-size: 1.5em;
 }
+
 /* Navigation bar for small screen */
 @media screen and (max-width: 992px) {
   nav ul {
@@ -83,14 +64,14 @@ nav li a:hover {
 /* MAIN CONTENT AREA */
 div.space {
   clear: both;
+  min-height: 600px;
   padding-top: 20px;
 }
 section {
   margin-bottom: 30px;
-  clear: both;
 }
 
-/* About Me */
+/* About Me (Responsiveness via Flexbox) */
 section#about div.aboutBox {
   display: flex;
   flex-wrap: wrap;
@@ -99,13 +80,10 @@ section#about div.aboutBox {
   min-width: 300px;
   margin-left: auto;
   margin-right: auto;
+  padding: 20px;
   background-color: #333;
-  padding: 20px 20px;
   border: 1px solid firebrick;
   border-radius: 20px;
-  transition: background-color 0.5s;
-}
-section#about article {
   color: ghostwhite;
 }
 section#about article#personalPhoto {
@@ -123,32 +101,32 @@ section#about img {
 section#about article#personalDescription {
   width: 80%;
   max-width: 300px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* Game and Form */
+/* Game and Form (Responsiveness via Bootstrap grid)*/
+/* Further game style css in tic-tac-toe-game.css and user-form-demo.css */
 div.gameAndFormBox {
   width: 60%;
   min-width: 300px;
   margin-left: auto;
   margin-right: auto;
   background-color: antiquewhite;
-  padding: 20px 30px;
+  padding: 20px 30px 0;
   border: 1px solid firebrick;
   border-radius: 20px;
-  transition: background-color 0.5s;
 }
 
 /* Address */
 div.addressBox {
   width: 60%;
   min-width: 300px;
-  clear: both;
   margin-left: auto;
   margin-right: auto;
-  background-color: powderblue;
   padding: 20px 30px;
   border: 1px solid firebrick;
   border-radius: 20px;
+  background-color: powderblue;
   transition: background-color 0.5s;
 }
 div.addressBox:hover {
@@ -156,7 +134,7 @@ div.addressBox:hover {
 }
 address {
   font-style: normal;
-  font-family: "Helvetica Neue", Helvetica, roboto, arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 address span {
   font-size: 1em;
@@ -164,4 +142,15 @@ address span {
 }
 address span:hover {
   font-size: 1.2em;
+}
+
+/* FOOTER */
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom 0;
+  background-color: burlywood;
+  width: 100%;
+  height: 80px;
 }

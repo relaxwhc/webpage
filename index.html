@@ -10,6 +10,7 @@
       crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tic-tac-toe-game.css">
+    <link rel="stylesheet" href="user-form-demo.css">
     <title>Wong's Webpage</title>
     <style>
       body {
@@ -27,9 +28,12 @@
   </head>
   <body>
     <div class="container">
+
+      <!-- Navigation Area -->
       <nav>
         <ul>
-          <li><a href="index.html" id="logoLink"><img src="logo.png" alt="logo Wong's Webpage"></a></li>
+          <li><a href="index.html" id="logoLink"><img src="logo.png"
+            alt="logo Wong's Webpage" id="logo"></a></li>
           <li><a href="#about">About Me</a></li>
           <li><a href="#gameTicTacToeArea">Game</a></li>
           <li><a href="#userFormArea">Form</a></li>
@@ -38,18 +42,25 @@
       </nav>
 
       <div class="space">
-        <!-- Introduction -->
+        <!-- About Me -->
         <section id="about">
           <div class="aboutBox">
             <article id="personalPhoto">
               <img src="personal-photo-whc.jpg" alt="My personal photo">
             </article>
             <article id="personalDescription">
-              <p>Quis no feugiat iriure facilisi lorem dolores. Accusam hendrerit invidunt est sit iriure vero sed. Iriure justo congue rebum elit quis iriure diam lorem ea. Labore elitr dolore commodo ipsum et amet vero. Dolor et kasd et sed erat. Sit sit dolor ipsum dolor sed erat dolor possim facilisis erat. Vero minim dignissim.
-Duis magna sadipscing sed duo erat erat praesent aliquip. Sed rebum luptatum. Volutpat eros wisi et invidunt. Elitr dolor zzril. Et zzril at consetetur consequat nulla dolore sanctus blandit cum. Ea augue sit ipsum eirmod.
-Eos clita diam diam in no tempor. Consetetur ut aliquyam clita erat amet nonumy. Accusam takimata et et sit duis eos labore ut. Quis tempor justo eirmod kasd sanctus eirmod erat diam elitr. Tation eleifend ut gubergren et consetetur voluptua stet. Sit elitr facilisi dolor feugait gubergren aliquyam. Dolor no.
-Aliquyam labore in sanctus dolor amet dolore diam sea. Ut minim voluptua commodo molestie diam. Et et at dolor tempor ut.
-</p>
+              <h2>About Me</h2>
+              <p>I see myself as a self-taught front-end programmer from Kepong,
+                Kuala Lumpur.</p>
+              <p>Acquiring skills to solve modern problems is the bedrock of
+                surviving in this harsh world.</p>
+              <p>Besides knowing HTML, CSS, Javascript, Regex, I also keep some
+                sharp tools in my drawer, such as image editing and video
+                making.</p>
+              <p>I believe both the content and packaging are important in our
+                presentation.</p>
+              <p>Let’s build a new world with our hands. The sweetest reward
+                comes from our effort and patience.</p>
             </article>
           </div>
         </section>
@@ -92,6 +103,77 @@ Aliquyam labore in sanctus dolor amet dolore diam sea. Ut minim voluptua commodo
               <article id="userFormArea" class="col-lg">
 
                 <h2>User Form</h2>
+                <div id="userForm" class="mb-5">
+                  <form id="theUserForm" action="post-form-submit-demo.html"
+                    method="GET">
+                    <!-- Given Name: required input -->
+                    <div class="mb-3">
+                      <label for="gName" class="form-label">Given Name</label>
+                      <input id="gName" type="text" class="form-control"
+                        name="gName" required>
+                      <div class="form-text">*required</div>
+                    </div>
+                    <!-- Family Name: required input -->
+                    <div class="mb-3">
+                      <label for="fName" class="form-label">Family Name</label>
+                      <input id="fName" type="text" class="form-control"
+                        name="fName" required>
+                      <div class="form-text">*required</div>
+                    </div>
+                    <!-- Email -->
+                    <div class="mb-3">
+                      <label for="inputEmail" class="form-label">
+                        Email address</label>
+                      <input id="inputEmail" type="email" class="form-control"
+                        aria-describedby="emailHelp" name="userEmail">
+                      <div class="form-text">We'll never share your email
+                        with anyone else.</div>
+                    </div>
+                    <!-- Gender -->
+                    <label class="form-label mb-1">Gender:</label>
+                    <div class="clearfix">
+                      <div class="form-check float-left">
+                        <input class="form-check-input" type="radio"
+                          name="gender" value="male" id="male">
+                        <label class="form-check-label" for="male">
+                          Male
+                        </label>
+                      </div>
+                      <div class="form-check float-left mb-3">
+                        <input class="form-check-input" type="radio"
+                          name="gender" value="female" id="female">
+                        <label class="form-check-label" for="female">
+                          Female
+                        </label>
+                      </div>
+                    </div>
+                    <!-- Drop down options -->
+                    <label class="form-label mb-3" for="pLanguage">
+                      Favorite programming language:</label>
+                    <select class="mb-3 form-select"
+                      aria-label="Default select example"
+                      name="programmingLanguage" id="pLanguage">
+                      <option selected>What's your favorite programming
+                        language?</option>
+                      <option value="javascript">Javascript</option>
+                      <option value="python">Python</option>
+                      <option value="php">PHP</option>
+                    </select>
+                    <!-- Form Check required -->
+                    <div class="mb-3 form-check">
+                      <input class="form-check-input" type="checkbox"
+                        name="check" value="true" id="flexCheckDefault" required>
+                      <label class="form-check-label" for="flexCheckDefault">
+                        I agree that I have provided true information.
+                      </label>
+                    </div>
+                    <!-- Submit button -->
+                    <div class="d-flex justify-content-center">
+                      <button type="submit" class="btn btn-primary">
+                        Submit</button>
+                    </div>
+                  </form>
+                </div>
 
               </article>
             </div>
@@ -108,7 +190,8 @@ Aliquyam labore in sanctus dolor amet dolore diam sea. Ut minim voluptua commodo
               <strong><span>Mobile number:</span></strong><br>
                 <span>012 - 6636 097</span><br><br>
               <strong><span>Email:</span></strong><br>
-                <span><a href="mailto:relaxwhc@gmail.com">relaxwhc@gmail.com</a></span>
+                <span><a href="mailto:relaxwhc@gmail.com">
+                  relaxwhc@gmail.com</a></span>
               <br><br>
               <strong><span>Home address:</span></strong><br>
                 <span>431, Jalan E 2/3, Taman Ehsan,
@@ -119,12 +202,6 @@ Aliquyam labore in sanctus dolor amet dolore diam sea. Ut minim voluptua commodo
       </div>
 
       <footer></footer>
-
-
-
-
-
-
 
     </div>
     <!-- main JS Script -->

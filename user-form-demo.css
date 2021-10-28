@@ -1,0 +1,16 @@
+/* User Form CSS */
+
+div#userForm {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  background-color: aliceblue;
+}
+.float-left {
+  display: inline;
+  float: left;
+  margin-right: 40px;
+}
