@@ -1,0 +1,150 @@
+// User-form CSS
+body {
+  background-color: antiquewhite;
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: sienna;
+  width: 100%;
+  height: 100px;
+}
+nav {
+  width: 100%;
+  height: 40px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+footer {
+
+  bottom 0;
+  background-color: burlywood;
+  width: 100%;
+  height: 40px;
+}
+div.space{
+  min-height: 600px;
+}
+
+/* NAVIGATION BAR */
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  padding-top: 20px;
+  width: 60%;
+  min-width: 150px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+}
+nav li img {
+  height: 100px;
+}
+nav li {
+  float: left;
+}
+nav li a {
+  /* border: 1px solid firebrick; FOR TESTING ONLY */
+  display: block;
+  width: 120px;
+  color: saddlebrown;
+  line-height: 100px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  transition: font-size 0.5s ease-in-out;
+}
+nav li a:hover {
+  color: royalblue;
+  font-size: 1.5em;
+}
+/* Navigation bar for small screen */
+@media screen and (max-width: 576px) {
+  nav ul {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav li a, nav li img {
+    width: 200px;
+    line-height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  nav li img {
+    height: auto;
+  }
+}
+
+/* MAIN CONTENT AREA */
+div.space {
+  clear: both;
+  padding-top: 20px;
+}
+section {
+  margin-bottom: 30px;
+  clear: both;
+}
+
+/* About Me */
+section#about div.aboutBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #333;
+  padding: 20px 20px;
+  border: 1px solid firebrick;
+  border-radius: 20px;
+  transition: background-color 0.5s;
+}
+section#about article {
+  color: ghostwhite;
+}
+section#about article#personalPhoto {
+  width: 45%;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section#about img {
+  width: 90%;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section#about article#personalDescription {
+  width: 80%;
+  max-width: 300px;
+}
+
+/* Address */
+div.address {
+  width: 60%;
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: powderblue;
+  padding: 20px 30px;
+  border: 1px solid firebrick;
+  border-radius: 20px;
+  transition: background-color 0.5s;
+}
+div.address:hover {
+  background-color: palegreen;
+}
+address {
+  font-style: normal;
+  font-family: "Helvetica Neue", Helvetica, roboto, arial, sans-serif;
+}
+address span {
+  font-size: 1em;
+  transition: font-size 0.5s;
+}
+address span:hover {
+  font-size: 1.2em;
+}
