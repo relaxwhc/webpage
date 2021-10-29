@@ -6,7 +6,7 @@ div.game {
   margin-right: auto;
 }
 table.gameTable, table.gameTable td {
-  border: 1px solid lightgray;
+  border: 1px solid #999;
   border-collapse: collapse;
 }
 table.gameTable {
