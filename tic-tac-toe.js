@@ -11,7 +11,7 @@ let gameStatus = "running";
 let counter = 1;
 
 // Onclick to activate symbol change (X or O):
-// odd counter number = X, even = O;
+// odd counter number: X, even: O;
 function playClick(self) {
   if (self.innerHTML == "" && gameStatus == "running") {
     if (counter % 2 != 0) {
